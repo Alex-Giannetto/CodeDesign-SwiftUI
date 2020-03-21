@@ -15,6 +15,7 @@
 		FA166E342425683F00A394A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA166E322425683F00A394A2 /* LaunchScreen.storyboard */; };
 		FA9518D4242673F40096F48B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9518D3242673F40096F48B /* MenuView.swift */; };
 		FA9518D62426824E0096F48B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9518D52426824E0096F48B /* Home.swift */; };
+		FA9518D8242692920096F48B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9518D7242692920096F48B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FA166E352425683F00A394A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9518D3242673F40096F48B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FA9518D52426824E0096F48B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FA9518D7242692920096F48B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FA166E292425683C00A394A2 /* SceneDelegate.swift */,
 				FA166E2B2425683C00A394A2 /* ContentView.swift */,
 				FA9518D52426824E0096F48B /* Home.swift */,
+				FA9518D7242692920096F48B /* HomeView.swift */,
 				FA9518D3242673F40096F48B /* MenuView.swift */,
 				FA166E2D2425683F00A394A2 /* Assets.xcassets */,
 				FA166E322425683F00A394A2 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				FA166E282425683C00A394A2 /* AppDelegate.swift in Sources */,
 				FA9518D4242673F40096F48B /* MenuView.swift in Sources */,
 				FA9518D62426824E0096F48B /* Home.swift in Sources */,
+				FA9518D8242692920096F48B /* HomeView.swift in Sources */,
 				FA166E2A2425683C00A394A2 /* SceneDelegate.swift in Sources */,
 				FA166E2C2425683C00A394A2 /* ContentView.swift in Sources */,
 			);
