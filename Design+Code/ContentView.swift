@@ -62,7 +62,6 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .background(Color.black)
                 .clipShape(RoundedRectangle(cornerRadius: showCard ? 30 : 20, style: .continuous))
-//                .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: viewState.width, y: viewState.height)
                 .offset(y: showCard ? -100 : 0)

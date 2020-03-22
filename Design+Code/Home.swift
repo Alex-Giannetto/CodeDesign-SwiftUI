@@ -19,10 +19,12 @@ struct Home: View {
             HomeView(showProfile: $showProfile)
                 .padding(.top, 44)
                 .background(Color.white)
-                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: showProfile ? 30 : 0, style: .continuous))
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
-                .rotation3DEffect(Angle(degrees: showProfile ? Double(viewState.height / 10) - 10 : 0), axis: (x: 10.0, y: 0, z: 0))
-                .offset(y: showProfile ? -450 : 0)
+                .rotation3DEffect(Angle(degrees:
+                    showProfile ? Double(viewState.height / 10) - 10 < 0 ? Double(viewState.height / 10) - 10 : 0 : 0
+                ), axis: (x: 10.0, y: 0, z: 0))
+                .offset(y: showProfile ? (viewState.height / 2) - 450 : 0)
                 .scaleEffect(showProfile ? 0.9 : 1)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .edgesIgnoringSafeArea(.all)
@@ -43,7 +45,7 @@ struct Home: View {
                         self.viewState = value.translation
                 }
                 .onEnded { value in
-                    if(self.viewState.height > 50){
+                    if self.viewState.height > 50 {
                         self.showProfile = false
                     }
                     
